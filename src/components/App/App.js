@@ -2,6 +2,7 @@ import style from './App.module.scss';
 import Header from "../Header/Header";
 import SectionFirst from "../SectionFirst/SectionFirst";
 import SectionSecond from "../SectionSecond/SectionSecond";
+import SectionThird from "../SectionThird/SectionThird";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header/>
       <SectionFirst/>
       <SectionSecond/>
+      <SectionThird/>
     </div>
   );
 }
