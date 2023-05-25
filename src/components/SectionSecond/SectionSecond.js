@@ -4,7 +4,7 @@ import TitleSection from "../TitleSection/TitleSection";
 import Clock from "../Clock/Clock";
 import Timer from "../Timer/Timer";
 
-const SectionSecondary = () => {
+const SectionSecond = () => {
 
   const sectionTitle = useSelector(store => store.sectionTitle);
 
@@ -16,4 +16,4 @@ const SectionSecondary = () => {
   );
 };
 
-export default SectionSecondary;
+export default SectionSecond;
