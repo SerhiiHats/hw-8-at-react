@@ -1,7 +1,7 @@
 import React from 'react';
 import {useSelector} from "react-redux";
 import TitleSection from "../TitleSection/TitleSection";
-import Timer from "../Timer/Timer";
+import TimerShuldUpdate from "../TimerShuldUpdate/TimerShuldUpdate";
 
 const SectionThird = () => {
   const sectionTitle = useSelector(store => store.sectionTitle);
@@ -10,6 +10,7 @@ const SectionThird = () => {
     <div>
       <TitleSection name={sectionTitle.task3.name} description={sectionTitle.task3.description}/>
       componentShuldUpdate
+      <TimerShuldUpdate/>
     </div>
   );
 };
