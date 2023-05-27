@@ -9,7 +9,6 @@ const SectionThird = () => {
   return (
     <div>
       <TitleSection name={sectionTitle.task3.name} description={sectionTitle.task3.description}/>
-      componentShuldUpdate
       <TimerShuldUpdate/>
     </div>
   );

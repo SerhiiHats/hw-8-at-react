@@ -15,7 +15,6 @@ const TimerShuldUpdate = () => {
       setMessage("componentShuldUpdate in : " + (stop / 10) + "sec.")
     }
 
-
   }, [timer]);
 
   return (
