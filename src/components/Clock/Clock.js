@@ -1,3 +1,4 @@
+import styles from "./Clock.module.scss";
 import React, {useEffect, useState} from 'react';
 
 const Clock = () => {
@@ -9,7 +10,7 @@ const Clock = () => {
     }, 1000);
   });
   return (
-    <div>
+    <div className={styles.containerClock}>
       {clock}
     </div>
   );

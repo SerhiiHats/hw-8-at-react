@@ -1,3 +1,4 @@
+import styles from "./ComponentExampleMemoHook.module.scss"
 import React, {useMemo, useState} from 'react';
 
 const ComponentExampleMemoHook = () => {
@@ -16,8 +17,8 @@ const ComponentExampleMemoHook = () => {
   const computed = useMemo(() => computedFunc(count2), [count2]);
 
   return (
-    <div>
-      <h3>fust count: {count}, slow counter: {computed}</h3>
+    <div className={styles.containerUseHook}>
+      <h3><span className={styles.fast}>fast count: {count}</span>, <span className={styles.slow}>slow counter: {computed}</span></h3>
       <h3>MemoHookExample</h3>
       <button onClick={() => setCount(count + 1)}>
         Click 1

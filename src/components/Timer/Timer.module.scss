@@ -1,0 +1,10 @@
+@import "src/index";
+
+.containerTimer{
+  padding: $size;
+  text-align: center;
+  font-size: $size*4;
+  span{
+    color: $attentionColor;
+  }
+}

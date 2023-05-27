@@ -1,0 +1,21 @@
+@import "src/index";
+
+.containerUseHook {
+  padding: $size;
+  text-align: center;
+  font-size: $size*2;
+
+  .fast {
+    color: green;
+  }
+
+  .slow {
+    color: $attentionColor;
+  }
+
+  button {
+    padding: 5px 10px;
+    margin: 10px;
+    cursor: pointer;
+  }
+}

@@ -1,3 +1,4 @@
+import styles from "./TimerShuldUpdate.module.scss"
 import React, {useEffect, useState} from 'react';
 
 const TimerShuldUpdate = () => {
@@ -18,9 +19,9 @@ const TimerShuldUpdate = () => {
   }, [timer]);
 
   return (
-    <div>
-      <p>Timer ShuldUpdate : {`${Math.floor(timer / 10)}:${timer % 10}`} sec. Stopped on {stop / 10} sec.</p>
-      <p>{message}</p>
+    <div className={styles.containerTimerShuldUpdate}>
+      <p>Timer ShuldUpdate : <span className={styles.timer}>{`${Math.floor(timer / 10)}:${timer % 10}`}</span> sec. Stopped on <span className={styles.stopTimer}>{stop / 10}</span> sec.</p>
+      <p className={styles.attention}>{message}</p>
     </div>
   );
 };

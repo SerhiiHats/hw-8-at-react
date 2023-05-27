@@ -1,0 +1,21 @@
+@import "src/index";
+
+.containerTimerShuldUpdate {
+  padding: $size;
+  text-align: center;
+  font-size: $size*2;
+
+  .timer{
+    color: $attentionColor;
+    font-weight: bold;
+  }
+  .stopTimer{
+    color: green;
+    font-weight: bold;
+  }
+
+  .attention {
+    color: $attentionColor;
+    height: $size*3;
+  }
+}

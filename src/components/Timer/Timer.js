@@ -1,3 +1,4 @@
+import styles from "./Timer.module.scss"
 import React, {useEffect, useState} from 'react';
 
 const Timer = () => {
@@ -12,8 +13,8 @@ const Timer = () => {
   });
 
   return (
-    <div>
-      <p>Timer: {`${Math.round(timer / 10)}:${timer % 10}`} sec.</p>
+    <div className={styles.containerTimer}>
+      <p>Timer: <span>{`${Math.round(timer / 10)}:${timer % 10}`}</span> sec.</p>
     </div>
   );
 };
